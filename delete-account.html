@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Divvy — Delete Your Account</title>
+<style>
+  :root {
+    --green: #8AA624;
+    --sage: #DBE4C9;
+    --ivory: #FFFFF0;
+    --amber: #FEA405;
+    --ink: #1a1a14;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--ivory);
+    color: var(--ink);
+    line-height: 1.65;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 48px 24px 80px; }
+  header { border-bottom: 3px solid var(--green); padding-bottom: 24px; margin-bottom: 32px; }
+  h1 { font-size: 2rem; color: var(--green); letter-spacing: -0.02em; }
+  .meta { color: #666; font-size: 0.9rem; margin-top: 6px; }
+  h2 { font-size: 1.25rem; margin: 36px 0 12px; color: var(--ink); }
+  p, li { margin-bottom: 10px; font-size: 1rem; }
+  ul, ol { padding-left: 22px; margin-bottom: 12px; }
+  .card {
+    background: var(--sage);
+    border-radius: 12px;
+    padding: 16px 20px;
+    margin: 16px 0;
+  }
+  .card p:last-child { margin-bottom: 0; }
+  .steps { counter-reset: step; list-style: none; padding-left: 0; }
+  .steps li {
+    position: relative;
+    padding-left: 44px;
+    margin-bottom: 14px;
+  }
+  .steps li::before {
+    counter-increment: step;
+    content: counter(step);
+    position: absolute;
+    left: 0; top: 2px;
+    width: 28px; height: 28px;
+    border-radius: 50%;
+    background: var(--green);
+    color: #fff;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+  }
+  table { width: 100%; border-collapse: collapse; margin: 12px 0 16px; font-size: 0.95rem; }
+  th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--sage); vertical-align: top; }
+  th { color: var(--green); font-weight: 600; }
+  a { color: #5a7016; }
+  footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--sage); color: #666; font-size: 0.85rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Delete Your Divvy Account</h1>
+    <p class="meta">Applies to the <strong>Divvy</strong> app on Google Play (<code>com.baqir.divvy</code>)</p>
+  </header>
+
+  <p>You can request deletion of your Divvy account and the personal data associated with it at any time. This page explains how to make the request and exactly what happens to your data.</p>
+
+  <h2>How to request deletion</h2>
+  <ol class="steps">
+    <li>Send an email to <a href="mailto:smbrizavi@gmail.com?subject=Delete%20my%20Divvy%20account"><strong>smbrizavi@gmail.com</strong></a> with the subject line <strong>"Delete my Divvy account"</strong>.</li>
+    <li>Send it <strong>from the same Google account email you use to sign in to Divvy</strong> — this is how we verify the request is really yours. No other verification is needed.</li>
+    <li>You will receive a confirmation once deletion is complete. Requests are actioned within <strong>30 days</strong>.</li>
+  </ol>
+
+  <div class="card">
+    <p><strong>Tip:</strong> If you no longer have access to that email account, contact us from any address and include your Divvy username — we will use additional questions to verify ownership before deleting.</p>
+  </div>
+
+  <h2>What gets deleted</h2>
+  <table>
+    <tr><th>Data</th><th>What happens</th></tr>
+    <tr>
+      <td><strong>Account information</strong><br>(name, email address, profile photo)</td>
+      <td>Permanently deleted.</td>
+    </tr>
+    <tr>
+      <td><strong>Friend connections and group memberships</strong></td>
+      <td>Permanently deleted.</td>
+    </tr>
+    <tr>
+      <td><strong>Receipt photos you uploaded</strong></td>
+      <td>Permanently deleted from storage.</td>
+    </tr>
+    <tr>
+      <td><strong>Shared expense records</strong><br>(bills you split with other users)</td>
+      <td>Retained in <strong>anonymized form</strong> — your name and identifiers are removed, but the amounts remain so that other users' balances stay correct. Anonymized records can no longer be linked to you.</td>
+    </tr>
+  </table>
+
+  <h2>Retention period</h2>
+  <p>Deletion is completed within 30 days of a verified request. No additional retention period applies beyond the anonymized shared-expense records described above, which are kept indefinitely because they no longer contain personal data.</p>
+
+  <h2>Questions</h2>
+  <p>Anything unclear, or want to know what data we hold before deciding? Email <a href="mailto:smbrizavi@gmail.com">smbrizavi@gmail.com</a> — see also the <a href="./">Divvy Privacy Policy</a>.</p>
+
+  <footer>
+    Divvy &middot; com.baqir.divvy &middot; This page is the canonical account-deletion process for the Divvy app distributed on Google Play.
+  </footer>
+</div>
+</body>
+</html>
